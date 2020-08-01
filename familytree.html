@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCS - Team</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <style type="text/css">
+    #custom_carousel .item {
+      color:#000;
+      background-color:#eee;
+      padding:20px 0;
+  }
+  #custom_carousel .controls{
+      overflow-x: auto;
+      overflow-y: hidden;
+      padding:0;
+      margin:0;
+      white-space: nowrap;
+      text-align: center;
+      position: relative;
+      background:#ddd
+  }
+  #custom_carousel .controls li {
+      display: table-cell;
+      width: 1%;
+      max-width:90px
+  }
+  #custom_carousel .controls li.active {
+      background-color:#eee;
+      border-top:4px solid orange;
+  }
+  #custom_carousel .controls a small {
+      overflow:hidden;
+      display:block;
+      font-size:13px;
+      margin-top:5px;
+      font-weight:bold
+  }
+  .node {
+    cursor: pointer;
+  }
+
+  .overlay{
+    background-size: cover;
+      background-repeat: no-repeat;
+      background-image:url("img/nistbg.jpg");
+  }
+   
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 1.5px;
+  }
+   
+  .node text {
+    font-size:20px; 
+    font-family:sans-serif;
+  }
+   
+  .link {
+    fill: none;
+    stroke: #000;
+    stroke-width: 1.5px;
+  }
+
+  .templink {
+    fill: none;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .ghostCircle.show{
+      display:block;
+  }
+
+  .ghostCircle, .activeDrag .ghostCircle{
+       display: none;
+  }
+  .faces{
+      position:relative;
+      width:7.3%;
+      padding:0.4em;
+      border-radius:0.4em;
+      color:white;
+      float:left;
+      height: 12em;
+      cursor: pointer;
+  }
+
+  .faceimg{
+      width:100%;
+      opacity:1.0;
+      border-radius:0.4em;
+  }
+
+  .facename{
+      background-color:#111;
+      opacity:0.8;
+      padding:0.3em;
+      border-radius:0.3em;
+      font-weight:bold;
+      font-size:50%;
+  }
+
+  </style>
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/dndTree.js"></script>
+  </head>
+<body>
+           <!-- Templatemo Script -->
+    
+    <div class="se-pre-con" style="display: none;"></div>
+
+    
+  <div id="facediv" style="position: fixed; bottom: 0px; right: 0px; display: none; width: 10%; padding: 0.4em; border-radius: 0.4em; color: white;">
+  <img id="face"  style="width:100%;opacity:1.0; border-radius:0.4em" src="img/sreta.JPG">
+  <p id="facename" class="facename" style="font-size:100%" align="center">Faculty Counselor</p>
+   </div>
+    </div>
+    <center><div id="tree-container" ></div></center>
+    
+</body>
+</html>

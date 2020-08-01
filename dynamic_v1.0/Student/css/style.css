@@ -1,0 +1,81 @@
+html
+{
+	height: 125%;
+
+}
+body {
+		height: 100%;
+		background: url("../images/bg.jpg")  ;
+		background-size: 120% 100%;
+		background-attachment: fixed;
+		-webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+}
+select{
+	width: 100%;
+}
+label{
+	color: rgba(0,0,0,0.7);
+}
+
+#stud-id::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   	color: rgb(220,0,220);
+    opacity: 1; /* Firefox */
+}
+#stud-id:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(220,0,220);
+}
+
+#stud-id::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(220,0,220);
+}
+#stud-roll::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+   	color: rgb(220,0,220);
+    opacity: 1; /* Firefox */
+}
+#stud-roll:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgb(220,0,220);
+}
+
+#stud-roll::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgb(220,0,220);
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgba(0,0,0,0.3);
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: rgba(0,0,0,0.3);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: rgba(0,0,0,0.3);
+}
+
+#setpic{
+	width:150px ;
+	height: 150px;
+	object-fit: cover;
+	border-radius: 6px;
+	border-width: 2px;
+	border-color: rgba(0,0,0,0.7);
+}
+
+#SignupContent {
+		max-width: 800px;
+		border-radius: 4px;
+		overflow: visible;
+		background-color: #ECEFF1;
+}
+
+@media screen and (max-width: 600px) {
+		#SignupContent {
+		}
+	#materialToolbar {
+		    padding: 10px;
+	}
+}

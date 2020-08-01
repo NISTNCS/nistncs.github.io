@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NCS - Appointment</title>
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet"> 
+  <link href="css/flexslider.css" rel="stylesheet"> 
+  <link href="css/templatemo-style.css" rel="stylesheet">
+  <link rel="shortcut icon" href="favicon.ico">
+  <style type="text/css">
+	* {
+	    box-sizing: border-box;
+	}
+	input[type=text], select, textarea, input[type=number], input[type=email]{
+	    width: 100%;
+	    padding: 12px;
+	    border: 1px solid #ccc;
+	    border-radius: 4px;
+	    box-sizing: border-box;
+	    resize: vertical;
+	}
+	label {
+	    padding: 12px 12px 12px 0;
+	    display: inline-block;
+	}
+	input[type=submit] {
+	    background-color: #4CAF50;
+	    color: white;
+	    padding: 12px 20px;
+	    border: none;
+	    border-radius: 4px;
+	    cursor: pointer;
+	    float: right;
+	}
+	input[type=submit]:hover {
+	    background-color: #45a049;
+	}
+	.col-30 {
+	    float: left;
+	    width: 30%;
+	    margin-top: 6px;
+	}
+	.col-70 {
+	    float: left;
+	    width: 70%;
+	    margin-top: 6px;
+	}
+	/* Clear floats after the columns */
+	.row:after {
+	    content: "";
+	    display: table;
+	    clear: both;
+	}
+	/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+	@media (max-width: 600px) {
+	    .col-30, .col-70, input[type=submit] {
+	        width: 100%;
+	        margin-top: 0;
+	    }
+	}
+  </style>
+
+  </head>
+  <body class="tm-gray-bg">
+  	<!-- Header -->
+  	<div class="tm-header">
+  		<div class="container">
+  			<div class="row">
+	  			<div class="col-lg-5 col-md-5 col-sm-5 tm-site-name-container" style=" font-size: 15px;">
+	  				<img src="img/logo.jpg" width="70px" height="35vh">
+  					<a href="index.html" class="tm-site-name">NIST COUNSELLING SERVICE</a>	
+  				</div>
+	  			<div class="col-lg-7 col-md-7 col-sm-7">
+	  				<div class="mobile-menu-icon">
+		              <i class="fa fa-bars"></i>
+		            </div>
+	  				<nav class="tm-nav">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About</a></li>
+							<li><a href="team.html">Our Team</a></li>
+							<li><a href="events.html">Events</a></li>
+							<li><a href="appointment.html" class="active">Appointment</a></li>
+							<li><a href="login.html">Login</a></li>
+						</ul>
+					</nav>		
+	  			</div>				
+  			</div>
+  		</div>	  	
+  	</div>
+	
+	<!-- Banner -->
+	<section class="tm-banner" style="padding-top: 55px;">
+		<!-- Flexslider -->
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title"><span class="tm-yellow-text">Counselling </span>program at<span class="tm-yellow-text"> Schools</span></h1>
+				</div>
+		      <img src="img/banner2.jpeg" />
+		    </li>
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">An event in <span class="tm-yellow-text">Waves</span> By <span class="tm-yellow-text">n.c.s.</span></h1>
+				</div>
+		      <img src="img/banner6.jpeg" />
+		    </li>
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">Stress <span class="tm-yellow-text">Management</span> Session</h1>
+				</div>
+		      <img src="img/banner3.jpeg" />
+		    </li>
+		  </ul>
+		</div>			
+	</section>
+
+	<!-- white bg -->
+	<section class="tm-white-bg section-padding-bottom" style="background:url(img/memphis.png) repeat 0px 0px;">
+		<div class="container">
+			<div class="row">
+				<div class="tm-section-header section-margin-top">
+					<div class="col-lg-3 col-md-2 col-sm-3"><hr></div>
+					<div class="col-lg-6 col-md-8 col-sm-6"><h2 class="tm-section-title">Take an appointment with us</h2></div>
+					<div class="col-lg-3 col-md-2 col-sm-3"><hr></div>	
+				</div>				
+			</div>
+			<div class="container">
+				<form action="appointment.html">
+					<div class="row">
+				      	<div class="col-30">
+				        	<label for="email">E-mail</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="email" id="email" name="email" placeholder="E-mail">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="fname">First Name</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="text" id="fname" name="firstname" placeholder="First name">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="lname">Last Name</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="text" id="lname" name="lastname" placeholder="Last name">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="rno">Roll Number</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="number" id="rno" name="rollno" placeholder="College roll number">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="rno">NCS ID</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="number" id="nid" name="nid" placeholder="NIST Counselling Service ID">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="mno">Mobile Number</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<input type="number" id="mno" name="mnumber" placeholder="Contact number">
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="timeslot">Time Slot</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<select id="tslot" name="tslot">
+				          		<option value="first">10 am - 11 am</option>
+				          		<option value="second">2 pm - 3 pm</option>
+				        	</select>
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<div class="col-30">
+				        	<label for="subject">Subject</label>
+				      	</div>
+				      	<div class="col-70">
+				        	<textarea id="subject" name="subject" placeholder="Write something about your problem..." style="height:100px"></textarea>
+				      	</div>
+				    </div>
+				    <div class="row">
+				      	<input type="submit" value="Submit" onclick="myFunction()">
+				    </div>
+				</form>
+			</div>	
+		</div>
+	</section>
+	<footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; 2020 NIST Counselling Service | Maintained by <a rel="nofollow" href="http://nist.edu/" target="_blank">N.I.S.T.</a> | Designed by <span style="color: #FCDD44">N.C.S. Web Design Team</span></p>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      		<!-- jQuery -->
+  	<script type="text/javascript" src="js/moment.js"></script>							<!-- moment.js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>					<!-- bootstrap js -->
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+   	<script type="text/javascript" src="js/templatemo-script.js"></script>      		<!-- Templatemo Script -->
+   	<script>
+		function myFunction() {
+		    alert("Thanks for taking an appointment with us!!!");
+		}
+	</script>
+	<script>
+		// HTML document is loaded. DOM is ready.
+		$(function() {
+
+			$('#hotelCarTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+
+        	$('.date').datetimepicker({
+            	format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+           
+			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});
+		});
+		
+		// Load Flexslider when everything is loaded.
+		$(window).load(function() {	  		
+		    $('.flexslider').flexslider({
+			    controlNav: false
+		    });
+	  	});
+	</script>
+ </body>
+ </html>
